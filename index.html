@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <title>My Portfolio</title>
         <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            />
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
 
         <link rel="stylesheet" href="assets/css/style.css">
 
@@ -17,70 +17,88 @@
         <!-- Header with navbar-->
 
         <header bg-light>
-            <nav class="nav navbar-expand-lg navbar-light">
-                <div>
-                    <h1>Irina Vakurova</h1>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul id="nav-bar-nav mr-4">
-                        <li class="nav-item"><a href="index.html">About</a></li>
-                        <li class="nav-item"> <a id="portfolio"
-                                href="portfolio.html">Portfolio</a></li>
-                        <li class="nav-item"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-
-            <!-- Main-info Section -->
-
-            <section class="main-info main-content-window bot-right">
-                <div class="row col-12">
-                    <h2>About Me</h2>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img id="bio-photo" src="assets/image/web_developer.gif"
-                            alt="Web Developer" height="250" width="300" />
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12 desc">
-                        <p>“Writing about yourself seems to be a lot like
-                            sticking a branch into clear river-water and rolling
-                            up the
-                            muddy bottom.” <a class="p-links"
-                                href="https://www.goodreads.com/author/quotes/3389.Stephen_King"
-                                target="_blank">@Stephen_King</a>
-                            "If cats looked like frogs we'd realize what nasty,
-                            cruel little bastards they are. Style. That's what
-                            people
-                            remember."<br>"Many people, meeting Aziraphale for
-                            the first time, formed three impressions: that he
-                            was
-                            English, that he was intelligent, and that he was
-                            gayer than a treeful of monkeys on nitrous oxide."
-                            <a
-                                class="p-links"
-                                href="https://www.goodreads.com/author/quotes/1654.Terry_Pratchett"
-                                target="_blank">@Terry_Pratchett</a><br>
-                            "We are cups, constantly and quietly being filled.
-                            The trick is, knowing how to tip ourselves over and
-                            let the beautiful stuff out." <a class="p-links"
-                                href="https://www.goodreads.com/author/quotes/1630.Ray_Bradbury"
-                                target="_blank">@Ray Bradbury</a>
-                        </p>
+            <nav class="nav navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html" id="logo">Irina
+                        Vakurova</a>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-secondary
+                            dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton">
+                            <ul id="dropdown-bar mr-4">
+                                <li class="dropdown-item"><a href="index.html">About</a></li>
+                                <li class="dropdown-item"> <a id="portfolio"
+                                        href="portfolio.html">Portfolio</a></li>
+                                <li class="dropdown-item"><a
+                                        href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </nav>
+        </header>
 
-            <!-- Footer -->
+        <!-- Main-info Section -->
 
-            <footer class="footer fixed-bottom text-muted-footer text-center">Copyright
-                &copy </footer>
+        <section class="main-info main-content-window bot-right">
+            <div class="row col-12">
+                <h2>About Me</h2>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <img id="bio-photo" src="assets/image/web_developer.gif"
+                        alt="Web Developer" height="250" width="300" />
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                    <p>“Writing about yourself seems to be a lot like
+                        sticking a branch into clear river-water and rolling
+                        up the
+                        muddy bottom.” <a class="p-links"
+                            href="https://www.goodreads.com/author/quotes/3389.Stephen_King"
+                            target="_blank">@Stephen_King</a>
+                        "If cats looked like frogs we'd realize what nasty,
+                        cruel little bastards they are. Style. That's what
+                        people
+                        remember."<br>"Many people, meeting Aziraphale for
+                        the first time, formed three impressions: that he
+                        was
+                        English, that he was intelligent, and that he was
+                        gayer than a treeful of monkeys on nitrous oxide."
+                        <a
+                            class="p-links"
+                            href="https://www.goodreads.com/author/quotes/1654.Terry_Pratchett"
+                            target="_blank">@Terry_Pratchett</a><br>
+                        "We are cups, constantly and quietly being filled.
+                        The trick is, knowing how to tip ourselves over and
+                        let the beautiful stuff out." <a class="p-links"
+                            href="https://www.goodreads.com/author/quotes/1630.Ray_Bradbury"
+                            target="_blank">@Ray Bradbury</a>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-            <!-- jQuery CDN -->
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Footer -->
 
-            <!-- Bootstrap CDN -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        </body>
-    </html
+        <footer class="footer fixed-bottom text-muted-footer text-center">Copyright
+            &copy </footer>
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="/scripts/jquery.min.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html

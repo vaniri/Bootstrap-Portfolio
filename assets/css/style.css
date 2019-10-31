@@ -208,7 +208,7 @@ label:hover {
   cursor: pointer;
 }
 
-.nav-item:not(:first-child):before {
+.dropdown-item:not(:first-child):before {
   border-right: 2px solid #4aaaa5;
   content: "";
 }
