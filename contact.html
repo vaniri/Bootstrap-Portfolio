@@ -9,68 +9,65 @@
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
             />
 
+        <link rel="stylesheet" href="assets/css/style.css">
+
     </head>
     <body>
 
-        <!-- Header -->
+        <!-- Header with navbar-->
 
-        <header>
-            <nav class="navbar bg-info">
-                <a class="navbar-brand justify-content-start text-white"
-                    href="#">Irina Vakurova</a>
-                <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active text-dark" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Link</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <!-- Main-contact Section -->
-
-        <div class="container mt-5">
-
-            <div class="row bg-light">
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                        <img align="center" src="assets/image/gravel.png"
-                        width="300rem" height="200rem" class="img-fluid" />
+        <header bg-light>
+            <nav class="nav navbar-expand-lg navbar-light">
+                <div>
+                    <h1>Irina Vakurova</h1>
                 </div>
-                <form>
-                    <div>
-                        <div class="form-group pt-4">
-                            <label for="formGroupExampleInput">Name:</label>
-                            <input type="text" class="form-control"
-                                id="formGroupExampleInput" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="formGroupExampleInput2">Email:</label>
-                            <input type="text" class="form-control"
-                                id="formGroupExampleInput2" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            
-                            <label for="Message">Message:</label>
-                            <textarea class="form-control" id="Message" placeholder="">
-                            </textarea>
-                        </div>
-                    </form>
+                <div class="collapse navbar-collapse">
+                    <ul id="nav-bar-nav mr-4">
+                        <li class="nav-item"><a href="index.html">About</a></li>
+                        <li class="nav-item"> <a id="portfolio"
+                                href="portfolio.html">Portfolio</a></li>
+                        <li class="nav-item"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Contact Section -->
+
+            <section class="contact-box main-content-window bot-right">
+                <div class="row col-12">
+                    <h2>Contact</h2>
                 </div>
-            </div>
-        </div>
-        <!-- Footer -->
-        <div class="row fixed-bottom justify-content-center text-white mt-5 pt-3
-            bg-secondary">Copyright &copy</div>
-    </body>
-</html>
+                <hr>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-md-8 col-sm-12">
+                        <form action="/action_page.php">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="text" id="email"
+                                    placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-window">Message:</label>
+                                <textarea class="form-control"
+                                    id="message-window" placeholder="">
+                                </textarea>
+                            </div>
+                            <input type="submit" id="submit-button"
+                                value="Submit">
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+
+            <footer class="footer fixed-bottom text-muted-footer text-center">Copyright
+                &copy </footer>
+
+            <script> </script>
+        </body>
+    </html>
