@@ -26,6 +26,10 @@ header {
   margin-right: auto;
 }
 
+.collapse.show {
+  display: none;
+}
+
 h1 {
   float: left;
   background-color: #4aaaa5;
@@ -250,3 +254,5 @@ label:hover {
   background-image: -moz-linear-gradient(right, #000, transparent);
   background-image: -o-linear-gradient(right, #000, transparent);
 }
+
+@media only screen and (max-width: 767px);
