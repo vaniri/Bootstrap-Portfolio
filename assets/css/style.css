@@ -146,12 +146,12 @@ header a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: auto;
+  padding: 0;
   margin: auto;
 }
 
 .portfolio-pic {
-  padding: 1em;
+  padding: 20px;
   transition-timing-function: ease-in-out;
   transition: 0.5s;
 }
@@ -163,14 +163,16 @@ header a:hover {
 
 .text-box {
   position: relative;
+  width: 300px;
+  padding: 0;
 }
 
 .text {
   position: absolute;
   bottom: 1.5em;
-  left: 1.55em;
-  right: 4.75em;
-  padding: 0.4em;
+  right: 20px;
+  left: 20px;
+  padding: 0.5em;
   text-align: center;
   background-color: #4aaaa5cc;
   color: white;
