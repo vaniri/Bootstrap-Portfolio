@@ -1,12 +1,10 @@
 html {
   height: 100%;
-  position: fixed;
-  width: 100%;
-  z-index: 3;
 }
 
 body {
   min-height: 100%;
+  position: relative;
   background-image: url("../image/gravel.png");
   margin: 0;
   padding-bottom: 6rem;
@@ -15,18 +13,49 @@ body {
 }
 
 header {
-  background-color: #ffffff;
+  background-color: #fcf8f8;
   border-bottom: solid #cccccc;
+}
+
+#logo {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 200;
+  color: #fff;
+  background: #4aaaa5;
+}
+
+.navbar {
+  max-width: 960px;
+  margin-left: 30px;
 }
 
 .navbar-collapse {
   justify-content: flex-end;
 }
 
-.nav {
-  width: 960px;
-  margin-left: auto;
-  margin-right: auto;
+.custom-toggler.navbar-toggler {
+  border-color: #4aaaa5;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+.dropdown-item {
+  width: auto;
+  padding-left: 0.4em;
+  padding-right: 0;
+}
+
+.dropdown-item:not(:first-child):before {
+  border-right: 2px solid #4aaaa5;
+  content: "";
+  margin-right: 0.4em;
 }
 
 hr {
@@ -60,6 +89,43 @@ header a:hover {
   opacity: 1;
 }
 
+.img-box {
+  margin-top: 10px;
+}
+
+#bio-photo {
+  position: relative;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.main-info h2,
+.portfolio-box h2,
+.contact-box h2 {
+  font-weight: 200;
+  font-size: 30px;
+  color: #4aaaa5;
+  margin: 0;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+}
+
+.main-info,
+.portfolio-box,
+.contact-box {
+  background-color: #ffffffaa;
+  margin: 30px 60px 30px 60px;
+  padding: 2em;
+  height: 100%;
+  max-width: 960px;
+}
+
+.row p {
+  font-size: 17px;
+  word-break: break-all;
+  text-align: justify;
+  width: 100%;
+}
+
 .p-links {
   text-align: center;
   text-decoration: none;
@@ -78,33 +144,6 @@ header a:hover {
   color: #4aaaa5;
 }
 
-.main-info h2,
-.portfolio-box h2,
-.contact-box h2 {
-  font-weight: 200;
-  font-size: 30px;
-  color: #4aaaa5;
-  margin: 0;
-  font-family: "Georgia", Times, "Times New Roman", serif;
-}
-
-.main-info,
-.portfolio-box,
-.contact-box {
-  background-color: #ffffffaa;
-  margin: auto;
-  margin-top: 30px;
-  padding: 15px;
-  text-align: justify;
-  width: 960px;
-  height: 100%;
-}
-
-p {
-  font-size: 17px;
-  word-break: break-all;
-}
-
 .pictures-box {
   display: flex;
   flex-direction: row;
@@ -112,8 +151,6 @@ p {
   justify-content: center;
   padding: auto;
   margin: auto;
-  margin-left: 7em;
-  overflow: hidden;
 }
 
 .portfolio-pic {
@@ -146,6 +183,7 @@ p {
 }
 
 .footer {
+  position: absolute;
   background-color: #666666;
   border-top: solid 7px #4aaaa5;
   color: lightgray;
@@ -192,25 +230,6 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
-label:hover {
-  cursor: pointer;
-}
-
-.dropdown-item {
-  width: auto;
-  padding: 0.3em;
-}
-
-.dropdown-item:not(:first-child):before {
-  border-right: 2px solid #4aaaa5;
-  content: "";
-  margin-right: 0.3em;
-}
-
-#portfolio {
-  padding-right: 0;
-}
-
 .bot-right {
   position: relative;
 }
@@ -253,13 +272,6 @@ label:hover {
   background-image: -o-linear-gradient(right, #000, transparent);
 }
 
-@media only screen and (max-width: 767px) {
-}
-
-.custom-toggler.navbar-toggler {
-  border-color: #4aaaa5;
-}
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
+/* #submit-btn:hover {
+  opacity: 0.7;
+} */
