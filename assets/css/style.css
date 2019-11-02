@@ -22,6 +22,7 @@ header {
   font-size: 20px;
   font-weight: 200;
   color: #fff;
+  padding: 0.5em;
   background: #4aaaa5;
 }
 
@@ -29,6 +30,7 @@ header {
   max-width: 960px;
   margin-left: 30px;
 }
+
 .navbar-collapse {
   justify-content: flex-end;
 }
@@ -56,40 +58,23 @@ label:hover {
   margin-right: 0.4em;
 }
 
-hr {
-  border: 1px solid #969595aa;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-
-li {
-  display: inline;
-}
-
-header a,
-a:active {
-  border: none;
-  color: #777777;
-  padding: 0.2em 0.8em 0.2em 0.8em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
-  font-weight: 200;
-  opacity: 0.6;
-  transition: 0.3s;
-}
-
-header a:hover {
+.dropdown-item:hover {
   cursor: pointer;
   color: #4aaaa5;
   text-decoration: underline;
   opacity: 1;
 }
 
+hr {
+  border: 1px solid #969595aa;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .img-box {
   margin-top: 10px;
 }
+
 #bio-photo {
   position: relative;
   width: 100%;
@@ -271,6 +256,13 @@ input[type="text"] {
   background-image: -o-linear-gradient(right, #000, transparent);
 }
 
-/* #submit-btn:hover {
-  opacity: 0.7;
-} */
+@media only screen and (max-width: 991px) {
+  .dropdown-item:not(:first-child):before {
+    border-right: none;
+    content: none;
+    margin-right: 0.4em;
+  }
+  #bio-photo {
+    margin-bottom: 10px;
+  }
+}
